@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:main="clr-namespace:App01_ControleXF"
+             x:Class="App01_ControleXF.Menu.Master">
+
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu" >
+            <StackLayout x:Name="Menu">
+                <Button x:Name="Botao1" Text="Activity Indicator" Clicked="GoActivityIndicatorPage"/>
+                <Button x:Name="Botao2" Text="Progress Bar" Clicked="GoProgressBarPage"/>
+                <Button x:Name="Botao3" Text="Box View" Clicked="GoBoxViewPage"/>
+                <Button x:Name="Botao4" Text="Label" Clicked="GoLabelPage"/>
+                <Button x:Name="Botao5" Text="Button" Clicked="GoButtonPage"/>
+                <Button x:Name="Botao6" Text="Entry/Editor" Clicked="GoEntryEditorPage"/>
+                <Button x:Name="Botao7" Text="Date Picker" Clicked="GoDatePickerPage"/>
+                <Button x:Name="Botao8" Text="Time Picker" Clicked="GoTimePickerPage"/>
+                <Button x:Name="Botao9" Text="Picker" Clicked="GoPickerPage"/>
+                <Button x:Name="Botao10" Text="Search Bar" Clicked="GoSearchBarPage"/>
+                <Button x:Name="Botao11" Text="Slidder e Stepper" Clicked="GoSlidderStepperPage"/>
+                <Button x:Name="Botao12" Text="Switch" Clicked="GoSwitchPage"/>
+                <Button x:Name="Botao13" Text="Image" Clicked="GoImagePage"/>
+                <Button x:Name="Botao14" Text="List View" Clicked="GoListViewPage"/>
+                <Button x:Name="Botao15" Text="Table View" Clicked="GoTableViewPage"/>
+                <Button x:Name="Botao16" Text="Web View" Clicked="GoWebViewPage"/>
+            </StackLayout>           
+        </ContentPage>        
+    </MasterDetailPage.Master>
+
+
+    <MasterDetailPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <main:MainPage/>
+            </x:Arguments>            
+        </NavigationPage>        
+    </MasterDetailPage.Detail>
+    
+</MasterDetailPage>
